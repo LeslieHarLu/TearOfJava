@@ -1,74 +1,76 @@
 package tearofjava;
 
-import java.util.Scanner;
 
+import java.util.Scanner;
 /**
  *
  * @author Lye Blue *°•●☆*
  */
 public class TearOfJava {
-
+// Cambios realizados en enunciado ******1)
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+     
+    Scanner sc; 
+    int j;
+    int n;
+    int i;
+    char c;
+    
+    sc = new Scanner(System.in);
+    n = 25;
+    i = 1;
+    c = '|';
 
-        Scanner sc;
-        int j;
-        int n;
-        int i;
-        char c;
+      while (i <= n) {
+            
+          j = 1;
 
-        sc = new Scanner(System.in);
-        n = 25;
-        i = 1;
-        c = '|';
+      while (j++ <= n - i) {
+      
+         System.out.print(" ");
 
-        while (i <= n) {
+      }
+         j = 1;
 
-            j = 1;
+      while (j++ <= i * 2 - 1) {
+      
+         System.out.print(c);
 
-            while (j++ <= n - i) {
+      }
 
-                System.out.print(" ");
+         System.out.println();
 
-            }
-            j = 1;
-
-            while (j++ <= i * 2 - 1) {
-
-                System.out.print(c);
-
-            }
-
-            System.out.println();
-
-            i++;
-
-        }
+         i++;
+         
+     }
         i = n - 1;
 
-        while (i > 0) {
+     while (i > 0) {
+     
+        j = 1;
 
-            j = 1;
+     while (j++ <= n - i) {
+     
+        System.out.print(" ");
 
-            while (j++ <= n - i) {
+     }
+        j = 1;
+        
+     while (j++ <= i * 2 - 1) {
+                
+        System.out.print(c);
 
-                System.out.print(" ");
+     }
 
-            }
-            j = 1;
+       System.out.println();
 
-            while (j++ <= i * 2 - 1) {
-
-                System.out.print(c);
-
-            }
-
-            System.out.println();
-
-            i--;
-        }
-    }
+       i--;
+     }  
+  }
 
 }
+    
+    
